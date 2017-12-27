@@ -15,9 +15,7 @@ API:
      按钮触发 清空和全部选中
       $('#demo').choicebox('choiceAll');
        $('#demo').choicebox('cleanAll');
-##dom 第一种
-<pre>
-<code>
+## dom 第一种
 <div class="table-responsive J_orderTable_cont">
                                 <!--表格-->
                                 <table class="cabinTable table table-hover table-bordered">
@@ -115,12 +113,9 @@ API:
                                     </tbody>
                                 </table>
                             </div>
-   </code>
-</pre>
 
 
-    ##dom 第2种bootstrap：
-  <pre><code>
+## dom 第2种bootstrap：
   <div class="table-responsive" id="testDemo">
           <table class="table table-condensed">
               <thead>
@@ -188,4 +183,3 @@ API:
               </tr>
           </table>
       </div>
-  </code></pre>
