@@ -16,10 +16,9 @@ API:
       $('#demo').choicebox('choiceAll');
       $('#demo').choicebox('cleanAll');
 ## dom 第一种
-   '<p> <div class="table-responsive J_orderTable_cont"></p>'
-    <!--表格-->
+   ```<div class="table-responsive J_orderTable_cont">
     <table class="cabinTable table table-hover table-bordered">
-    <thead>
+    <thead>```
     <tr>
      <th>
      <div class="checkbox-inline">
