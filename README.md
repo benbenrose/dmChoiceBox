@@ -1,8 +1,9 @@
 # dmChoiceBox 1.0
 # auth lily
-API:
+### API
     $('#demo').choicebox({type:'checkbox',attr:'value'}).on('change.dm.choice',function (data) {
                                     console.log(data);
+
     });
 
     $('#demo').choicebox({type:'radio',attr:'value'}).on('change.dm.choice',function (data) {
