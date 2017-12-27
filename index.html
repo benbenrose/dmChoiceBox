@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkbox radio demo</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<!-- bootstrap样式-->
+<div>
+    <div style="height: 50px;width: 100%;padding: 10px 10px;">
+        <button class="btn btn-default J_all_btn" type="button" >选中全部</button>
+        <button class="btn btn-default J_clean_btn" type="button">清空全部</button>
+    </div>
+    <div class="table-responsive" id="testDemo">
+        <table class="table table-condensed">
+            <thead>
+            <tr>
+                <th >
+                    <label class="checkbox-inline">
+                        <input type="checkbox" data-check="all" >全选
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" data-check="allinverse">反选
+                    </label>
+                </th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>年龄</th>
+            </tr>
+            </thead>
+            <tr>
+                <td class="active">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="lily1" data-check="one">
+                        </label>
+                    </div>
+                </td>
+                <td class="active">lily1</td>
+                <td class="success">nv</td>
+                <td class="warning">保密</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="lily2" data-check="one">
+                        </label>
+                    </div>
+                </td>
+                <td class="active">lily2</td>
+                <td class="success">nv</td>
+                <td class="warning">保密</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="lily3" data-check="one">
+                        </label>
+                    </div>
+                </td>
+                <td class="active">lily3</td>
+                <td class="success">nv</td>
+                <td class="warning">保密</td>
+            </tr>
+            <tr>
+                <td class="active">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="lily4" data-check="one">
+                        </label>
+                    </div>
+                </td>
+                <td class="active">lily4</td>
+                <td class="success">nv</td>
+                <td class="warning">保密</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/dmChoiceBox.js"></script>
+</html>
