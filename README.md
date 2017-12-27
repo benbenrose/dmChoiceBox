@@ -16,7 +16,7 @@ API:
       $('#demo').choicebox('choiceAll');
       $('#demo').choicebox('cleanAll');
 ## dom 第一种
-   <p> <div class="table-responsive J_orderTable_cont"></p>
+   '<p> <div class="table-responsive J_orderTable_cont"></p>'
     <!--表格-->
     <table class="cabinTable table table-hover table-bordered">
     <thead>
