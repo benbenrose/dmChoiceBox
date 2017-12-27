@@ -16,9 +16,10 @@ API:
       $('#demo').choicebox('choiceAll');
       $('#demo').choicebox('cleanAll');
 ## dom 第一种
-   ```<div class="table-responsive J_orderTable_cont">
+   ```
+   <div class="table-responsive J_orderTable_cont">
     <table class="cabinTable table table-hover table-bordered">
-    <thead>```
+    <thead>
     <tr>
      <th>
      <div class="checkbox-inline">
@@ -113,9 +114,10 @@ API:
           </table>
          </div>
 
-
+```
 ## dom 第2种bootstrap：
-   <p> <div class="table-responsive" id="testDemo">
+```
+   <div class="table-responsive" id="testDemo">
           <table class="table table-condensed">
               <thead>
               <tr>
@@ -181,4 +183,5 @@ API:
                   <td class="warning">保密</td>
               </tr>
           </table>
-      </div></p>
+      </div>
+      ```
