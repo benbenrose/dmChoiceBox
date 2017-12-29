@@ -10,6 +10,42 @@
 <body>
 <!-- bootstrap样式-->
 <div>
+    <table class="table table-bordered table-striped table-hover" >
+        <caption >dmChoiceBox API</caption>
+        <thead>
+        <tr class="rtl-table-header rtl-goods-table-tr">
+            <th class="mw150">功能</th>
+            <th class="mw110">使用方法</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+            <td>初始化</td>
+            <td>
+                $('#demo').choicebox({type:'checkbox',attr:'value'}).on('change.dm.choice',function (data) {
+                console.log(data.checkedCollect);
+                console.log(data.checkCollect);
+                });
+                $('#demo').choicebox({type:'radio',attr:'value'}).on('change.dm.choice',function (data) {
+                console.log(data.checkCollect);
+                });
+                <br>
+                type:checkbox/radio
+                <br>
+                attr:需要的数据绑定的节点名称
+                <br>
+                data.checkedCollect:选中的数据
+            </td>
+        </tr>
+        <tr >
+            <td>按钮触发 清空和全部选中</td>
+            <td>
+                $('#demo').choicebox('choiceAll');
+                $('#demo').choicebox('cleanAll');
+            </td>
+        </tr>
+        </tbody>
+    </table>
     <div style="height: 50px;width: 100%;padding: 10px 10px;">
         <button class="btn btn-default J_all_btn" type="button" >选中全部</button>
         <button class="btn btn-default J_clean_btn" type="button">清空全部</button>
@@ -81,6 +117,7 @@
             </tr>
         </table>
     </div>
+    <div class="checked-value"></div>
 </div>
 </body>
 <script src="./js/index.js"></script>

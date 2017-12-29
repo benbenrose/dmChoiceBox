@@ -1,7 +1,7 @@
 /**
- * Created by lili on 2017/12/27.
+ * auth lily
  * checkbox radio
- *
+ * 2017/12/27.
  */
 (function ($,window) {
     //如果用seajs等就在包裹一层请求

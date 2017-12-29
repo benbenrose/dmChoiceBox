@@ -6,7 +6,9 @@ $(document).ready(function(){
         type: 'checkbox',
         attr: 'value'
     }).on('change.dm.choice', function (data) {
+        if(!data.checkedCollect) return;
         console.log(data);
+        $('.checked-value').html('选中的值:'+data.checkedCollect.join(','));
     });
 
     $('.J_all_btn').on('click',function () {
