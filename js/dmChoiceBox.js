@@ -106,13 +106,13 @@
                     }
                     _cache.push(_obj);
                 });
-                var e = $.Event('change.dm.choice', { checkCollect: _cache,checkedCollect:_cacheChecked});
+                var e = $.Event('change.dm.choice', { checkCollect: _cache,checkedCollect:_cacheChecked,$element:$(this.$element).parent().find('input')});
                 $(this.element).trigger(e)
             }
             ChoiceBox.prototype.radioBoxChange = function(){
                 var _attr = this.attr,_cache = '';
                 if(_attr) _cache = $(this.$element).parent().find('input:not(:disabled)').attr(_attr);
-                var e = $.Event('change.dm.choice', { checkCollect: _cache});
+                var e = $.Event('change.dm.choice', { checkedCollect: _cache,$element:$(this.$element).parent().find('input')});
                 $(this.element).trigger(e)
                 return this;
             }
